@@ -1,105 +1,75 @@
-body {
-  font-family: Arial, sans-serif;
-  background-color: #2e2e2e;
+.background-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-image: url("/images/background.webp");
+  background-size: cover;
+  background-position: center;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  margin-top: 100px;
+}
+
+h1 {
+  font-size: 3rem;
   color: #fff;
-  margin: 0;
-  padding: 0;
 }
 
-header {
-  background-color: #1c1c1c;
-  padding: 30px;
-  text-align: center;
+p {
+  font-size: 2rem;
+  color: #fff;
 }
 
-header h1 {
-  margin: 0;
-  font-size: 48px;
-}
-
-header p {
-  margin: 20px 0 0;
-  font-size: 24px;
-}
-
-.gallery {
-  padding: 50px;
-  text-align: center;
-}
-
-.gallery h2 {
-  margin: 0;
-}
-
-.image-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  grid-gap: 20px;
-}
-
-.image-grid img {
-  max-width: 100%;
-}
-
-.signup {
-  background-color: #1c1c1c;
-  padding: 50px;
-  text-align: center;
-}
-
-.signup h2 {
-  margin: 0;
-}
-
-.signup p {
-  margin: 20px 0 0;
-  font-size: 24px;
-}
-
-.signup form {
-  margin: 20px 0 0;
+form {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 50px;
 }
 
-.signup input[type="email"] {
+input[type="email"] {
+  font-size: 1.5rem;
   padding: 10px;
-  border-radius: 5px;
+  border-radius: 5px 0 0 5px;
   border: none;
-  margin-right: 10px;
-  font-size: 18px;
-  width: 300px;
+  outline: none;
 }
 
-.signup button[type="submit"] {
+button[type="submit"] {
+  font-size: 1.5rem;
   padding: 10px 20px;
-  border-radius: 5px;
+  background-color: #ff9800;
   border: none;
-  background-color: #fff;
-  color: #000;
-  font-size: 18px;
-cursor: pointer;
+  border-radius: 0 5px 5px 0;
+  color: #fff;
+  cursor: pointer;
 }
 
 footer {
-background-color: #1c1c1c;
-padding: 20px;
-text-align: center;
+  background-color: #1c1c1c;
+  padding: 20px;
+  text-align: center;
 }
 
 footer ul {
-margin: 0;
-padding: 0;
-list-style: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 footer li {
-display: inline-block;
-margin: 0 10px;
+  display: inline-block;
+  margin: 0 10px;
 }
 
 footer a {
-color: #fff;
-text-decoration: none;
+  color: #fff;
+  text-decoration: none;
 }
